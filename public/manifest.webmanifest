@@ -1,0 +1,17 @@
+{
+  "name": "DevLaunch",
+  "short_name": "DevLaunch",
+  "description": "A local-first developer portfolio operating system.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b17",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
