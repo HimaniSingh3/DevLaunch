@@ -1,0 +1,27 @@
+{
+  "name": "devlaunch",
+  "version": "3.0.0",
+  "description": "A local-first developer portfolio operating system for managing projects, generating case studies, building resumes, tracking launch readiness, and exporting a public portfolio.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "verify": "node scripts/verify.mjs"
+  },
+  "keywords": [
+    "portfolio",
+    "javascript",
+    "vite",
+    "developer-tools",
+    "dashboard",
+    "pwa",
+    "frontend"
+  ],
+  "author": "Himani Singh",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
