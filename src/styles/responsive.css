@@ -1,0 +1,23 @@
+@media (max-width: 1120px) {
+  .app-shell { grid-template-columns: 1fr; }
+  .sidebar-shell { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+  .side-nav { grid-template-columns: repeat(3, 1fr); }
+  .side-nav button { justify-content: center; }
+  .sidebar-footer { display: none; }
+  .hero-grid, .analytics-grid, .case-grid, .builder-grid, .resume-layout, .backup-grid { grid-template-columns: 1fr; }
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .page { width: min(100% - 24px, 1240px); padding-top: 22px; }
+  .topbar { position: static; flex-direction: column; align-items: stretch; padding: 18px; }
+  .topbar-actions, .hero-actions, .card-actions, .contact-actions { flex-direction: column; }
+  .btn { width: 100%; }
+  .side-nav { grid-template-columns: 1fr 1fr; }
+  .hero-copy h1 { font-size: clamp(3rem, 17vw, 5rem); }
+  .metric-grid, .project-grid, .notes-grid { grid-template-columns: 1fr; }
+  .toolbar { grid-template-columns: 1fr; }
+  .section-heading.split { flex-direction: column; align-items: stretch; }
+  .check-grid { grid-template-columns: 1fr; }
+  .toast { left: 14px; right: 14px; text-align: center; }
+}
