@@ -1,0 +1,58 @@
+.app-shell { min-height: 100vh; display: grid; grid-template-columns: 280px 1fr; }
+.sidebar-shell {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 20px;
+  border-right: 1px solid var(--border);
+  background: rgba(7, 9, 20, .72);
+  backdrop-filter: blur(20px);
+}
+[data-theme="light"] .sidebar-shell { background: rgba(247, 248, 252, .78); }
+.brand { display: flex; align-items: center; gap: 12px; padding: 8px; }
+.brand img { width: 46px; height: 46px; }
+.brand strong { display: block; font-size: 1.06rem; }
+.brand small { color: var(--muted); }
+.side-nav { display: grid; gap: 8px; }
+.side-nav button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  border: 0;
+  border-radius: 15px;
+  padding: 0 14px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 850;
+  text-align: left;
+}
+.side-nav button:hover, .side-nav button.active { background: var(--surface-strong); color: var(--text); }
+.sidebar-footer { margin-top: auto; }
+.app-main { min-width: 0; }
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(18px);
+}
+.topbar h1 { margin: 0; font-size: clamp(1.3rem, 3vw, 2rem); letter-spacing: -0.04em; }
+.topbar-actions, .hero-actions, .card-actions, .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.page { width: min(100% - 36px, 1240px); margin-inline: auto; padding: 32px 0 90px; }
+.section-block { margin-bottom: 36px; }
+.section-heading { margin-bottom: 22px; }
+.section-heading.split { display: flex; justify-content: space-between; gap: 18px; align-items: end; }
+.section-heading h2 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.06em; line-height: 1; }
+.section-heading p { max-width: 720px; color: var(--muted); line-height: 1.7; }
